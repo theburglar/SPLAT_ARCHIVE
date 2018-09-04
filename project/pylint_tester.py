@@ -15,11 +15,14 @@ class WritableObject:
 
 def run_pylint(filename='C:/Users/Rudi/Documents/Uni/CSSE1001/2018s2a1/a1.py'):
     ARGS = []
+    ARGS = ['--output-format=json']
     pylint_output = WritableObject()
     Run([filename] + ARGS, reporter=TextReporter(pylint_output), do_exit=False)
 
-    for x in pylint_output.read():
-        print(x, end='')
+    # print(pylint_output.read())
+
+    # for x in pylint_output.read():
+    #     print(x, end='')
 
 if __name__ == '__main__':
     run_pylint()
