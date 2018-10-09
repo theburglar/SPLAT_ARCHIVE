@@ -13,7 +13,7 @@ class WritableObject:
         return self._content
 
 
-def run_pylint(filename='C:/Users/Rudi/Documents/Uni/CSSE1001/2018s2a1/a1.py'):
+def run_pylint(filename='a1/a1_solution.py'):
     ARGS = []
     ARGS = ['--output-format=json']
     pylint_output = WritableObject()

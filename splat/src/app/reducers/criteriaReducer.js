@@ -1,25 +1,39 @@
 const initialState = [
     {
         name: 'Criteria1',
-        description: 'description1',
+        description: 'Description1',
         max: 10,
-        score: 0,
-        comment: '-'
+        score: 10,
+        comment: 'Comment on criteria1'
     },
     {
         name: 'Criteria2',
-        description: 'description2',
+        description: 'Description2',
         max: 10,
-        score: 0,
-        comment: '-'
+        score: 7,
+        comment: 'Comment on criteria2'
     },
     {
         name: 'Criteria3',
-        description: 'description3',
+        description: 'Description3',
         max: 10,
-        score: 0,
-        comment: '-'
-    }
+        score: 5,
+        comment: 'Comment on criteria3'
+    },
+    {
+        name: 'Criteria4',
+        description: 'Description4',
+        max: 10,
+        score: 8,
+        comment: 'Comment on criteria4'
+    },
+    {
+        name: 'Criteria5',
+        description: 'Description5',
+        max: 10,
+        score: 5,
+        comment: 'Comment on criteria5'
+    },
 ]
 
 const criteriaReducer = (state = initialState, action) => {

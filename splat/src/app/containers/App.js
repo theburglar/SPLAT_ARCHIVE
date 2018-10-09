@@ -1,6 +1,9 @@
 import React, {Component} from 'react';
 import {connect} from 'react-redux';
 
+import {TestResults} from './TestResults';
+import {StaticAnalysis} from './StaticAnalysis';
+
 import {ScriptEditor} from './ScriptEditor';
 import CriteriaSheet from './CriteriaSheet';
 import {CriteriaSummaryPane, CriteriaSummaryPanel} from '../components/CriteriaSummaryPanel';
@@ -25,9 +28,15 @@ class App extends Component {
                         </button>
                     </div>
                 </div>
+
                 <div className="script-panel" style={{padding: '10px', borderStyle: 'solid', borderWidth: '3px'}}>
-                    <h3>Script</h3>
-                    <ScriptEditor/>
+                    <div><button>Script</button><button>Test Results</button></div>
+                    {/*<h3>Script</h3>*/}
+                    {/*<ScriptEditor/>*/}
+                    {/*<h3>Marking Tests</h3>*/}
+                    {/*<TestResults/>*/}
+                    <h3>Static Analysis</h3>
+                    <StaticAnalysis/>
                 </div>
             </div>
         );

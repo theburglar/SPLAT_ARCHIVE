@@ -14,7 +14,7 @@ export const CriteriaRow = (props) => {
         <div className="criteria-row" style={rowStyle}>
             <div className="criteria-name" style={columnStyle}>{props.name} </div>
             <div className="criteria-description" style={columnStyle}>{props.description}</div>
-            <div className="criteria-max" style={columnStyle}>{props.max}</div>
+            <div className="criteria-max" style={columnStyle}>[{props.max}]</div>
             <div className="criteria-score" style={columnStyle}>
                 <input
                     type="number"
