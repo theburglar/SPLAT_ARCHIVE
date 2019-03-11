@@ -4,11 +4,11 @@ from pprint import pprint
 
 FILE = 'python_sources/inheritance-soln.py'
 
-GLB = 'GLOBAL'
-IMP = 'IMPORTS'
-CLS = 'CLASS'
-FUNC = 'FUNCTION'
-MTHD = 'METHOD'
+GLB = 'global'
+IMP = 'imports'
+CLS = 'classes'
+FUNC = 'functions'
+MTHD = 'methods'
 
 class SourceDeconstructor:
     def __init__(self, source):
@@ -37,7 +37,7 @@ class SourceDeconstructor:
         methods = {}
         cls = {'name': cname,
                'source': astor.to_source(node),
-               'methods': methods}
+               MTHD: methods}
 
         # methods
         for child in node.body:
