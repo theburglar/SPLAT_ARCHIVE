@@ -1,0 +1,11 @@
+# Installation
+triton instance create --wait --name splat --network zones --metadata=uq_users="s4359147:sysadmin uquser:nogroup" uq-ubuntu standard
+
+uq-webproj-create
+
+# Access
+External URL: s4359147-splat.uqcloud.net
+SSH: s4359147-splat.zones.eait.uq.edu.au
+
+
+SHA256:G3uwqao0+Au5+C/HoHtZCX7UB2ZX5vhDXNQGUazBGjY.
